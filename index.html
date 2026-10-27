@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Xuejing Liu</title>
+<meta name="description" content="Xuejing Liu, researcher at Qwen Team, Tongyi Lab, Alibaba Group. Multimodal pretraining data, model architecture and evaluation.">
+<meta name="author" content="Xuejing Liu">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%231a5fb4'/%3E%3Ctext x='32' y='44' font-family='Helvetica,sans-serif' font-size='30' font-weight='600' fill='white' text-anchor='middle'%3EXL%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/style.css?v=4">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Xuejing Liu",
+  "jobTitle": "Researcher",
+  "affiliation": { "@type": "Organization", "name": "Alibaba Group, Tongyi Lab — Qwen Team" },
+  "url": "https://gingl.github.io/",
+  "sameAs": ["https://scholar.google.com/citations?user=SVQYcYcAAAAJ", "https://github.com/GingL"]
+}
+</script>
+</head>
+<body>
+
+<header>
+  <h1>Xuejing Liu</h1>
+  <p class="sub">Researcher, Qwen Team, Tongyi Lab, Alibaba Group</p>
+
+  <p class="bio">I work on multimodal large language models. My work sits in three places: how pretraining data is built, cleaned and mixed; how vision is wired into the language backbone; and how to evaluate models honestly. I have contributed to the Qwen series of models since Qwen2-VL.</p>
+
+  <p class="links">
+    <a href="mailto:xuejing.liu@vipl.ict.ac.cn">Email</a><span>/</span>
+    <a href="https://scholar.google.com/citations?user=SVQYcYcAAAAJ" target="_blank" rel="noopener">Google Scholar</a><span>/</span>
+    <a href="https://github.com/GingL" target="_blank" rel="noopener">GitHub</a>
+  </p>
+</header>
+
+<section id="news">
+  <h2>News</h2>
+  <ul class="rows">
+    <li><span class="when">2026.04</span><span class="what">Qwen3.5-Omni technical report released.</span></li>
+    <li><span class="when">2026</span><span class="what"><i>Revisiting Multimodal Positional Encoding in Vision–Language Models</i> accepted to ICLR 2026.</span></li>
+    <li><span class="when">2025.11</span><span class="what">Qwen3-VL technical report: 256K interleaved context, with a reworked positional encoding and visual token compression.</span></li>
+    <li><span class="when">2025.10</span><span class="what">CC-OCR published at ICCV 2025, benchmarking literacy of large multimodal models.</span></li>
+    <li><span class="when">2025.05</span><span class="what">Qwen3 technical report released.</span></li>
+    <li><span class="when">2025.03</span><span class="what">Qwen2.5-Omni technical report released.</span></li>
+    <li><span class="when">2025.02</span><span class="what">Qwen2.5-VL technical report: native dynamic resolution, absolute time encoding, box and point grounding, long video.</span></li>
+    <li><span class="when">2024.09</span><span class="what">Qwen2-VL released, with native support for any resolution.</span></li>
+  </ul>
+</section>
+
+<section id="publications">
+  <h2>Publications</h2>
+  <p class="note-line">Grouped by topic; the full list is on <a href="https://scholar.google.com/citations?user=SVQYcYcAAAAJ" target="_blank" rel="noopener">Google Scholar</a>.</p>
+
+  <h3>Multimodal foundation models</h3>
+  <ul class="pubs">
+    <li>
+      <p class="ptitle"><a href="https://arxiv.org/abs/2511.21631" target="_blank" rel="noopener">Qwen3-VL Technical Report</a></p>
+      <p class="pauthors">Qwen Team</p>
+      <p class="pvenue">arXiv 2511.21631 · 2025</p>
+      <p class="pdesc">256K interleaved context; reworked positional encoding, DeepStack multi-level visual features, timestamp-aligned video.</p>
+    </li>
+    <li>
+      <p class="ptitle"><a href="https://arxiv.org/abs/2509.17765" target="_blank" rel="noopener">Qwen3-Omni Technical Report</a></p>
+      <p class="pauthors">Qwen Team</p>
+      <p class="pvenue">arXiv 2509.17765 · 2025</p>
+    </li>
+    <li>
+      <p class="ptitle"><a href="https://arxiv.org/abs/2505.09388" target="_blank" rel="noopener">Qwen3 Technical Report</a></p>
+      <p class="pauthors">Qwen Team</p>
+      <p class="pvenue">arXiv 2505.09388 · 2025</p>
+    </li>
+    <li>
+      <p class="ptitle"><a href="https://arxiv.org/abs/2502.13923" target="_blank" rel="noopener">Qwen2.5-VL Technical Report</a></p>
+      <p class="pauthors">S. Bai, K. Chen, <b>X. Liu</b>, J. Wang, W. Ge, S. Song, et al.</p>
+      <p class="pvenue">arXiv 2502.13923 · 2025</p>
+      <p class="pdesc">A native dynamic-resolution ViT with window attention and absolute time encoding, for hour-long video, second-level grounding and document parsing.</p>
+    </li>
+    <li>
+      <p class="ptitle"><a href="https://arxiv.org/abs/2409.12191" target="_blank" rel="noopener">Qwen2-VL: Enhancing Vision-Language Model's Perception of the World at Any Resolution</a></p>
+      <p class="pauthors">P. Wang, S. Bai, S. Tan, S. Wang, Z. Fan, J. Bai, K. Chen, <b>X. Liu</b>, J. Wang, W. Ge, et al.</p>
+      <p class="pvenue">arXiv 2409.12191 · 2024</p>
+      <p class="pdesc">Dynamic resolution with M-RoPE, so the model reads images at native resolution and handles varying aspect ratios and video.</p>
+    </li>
+  </ul>
+
+  <h3>Positional encoding</h3>
+  <ul class="pubs">
+    <li>
+      <p class="ptitle">Revisiting Multimodal Positional Encoding in Vision–Language Models</p>
+      <p class="pauthors">J. Huang, <b>X. Liu</b>, S. Song, R. Hou, H. Chang, J. Lin, S. Bai</p>
+      <p class="pvenue">ICLR 2026</p>
+      <p class="pdesc">Revisits the theoretical gaps in multimodal positional encodings, proposes a more stable alternative, and puts it into practice in Qwen-VL.</p>
+    </li>
+  </ul>
+
+  <h3>Evaluation &amp; data</h3>
+  <ul class="pubs">
+    <li>
+      <p class="ptitle"><a href="https://doi.org/10.1109/ICCV51701.2025.02019" target="_blank" rel="noopener">CC-OCR: A Comprehensive and Challenging OCR Benchmark for Evaluating Large Multimodal Models in Literacy</a></p>
+      <p class="pauthors">Z. Yang, J. Tang, Z. Li, P. Wang, J. Wan, H. Zhong, <b>X. Liu</b>, M. Yang, P. Wang, et al.</p>
+      <p class="pvenue">ICCV 2025</p>
+      <p class="pdesc">A multi-scene, multilingual OCR benchmark aimed at where large multimodal models still fail: dense layouts and small text.</p>
+    </li>
+    <li>
+      <p class="ptitle"><a href="https://doi.org/10.1145/3688866.3689125" target="_blank" rel="noopener">SynthDoc: Bilingual Documents Synthesis for Visual Document Understanding</a></p>
+      <p class="pauthors">C. Ding, <b>X. Liu</b>, W. Tang, J. Li, X. Wang, R. Zhao, C. T. Nguyen, F. Tan</p>
+      <p class="pvenue">Workshop on Large Generative Models Meet Multimodal Applications · 2024</p>
+      <p class="pdesc">Synthesises bilingual documents to fill the data gap for visual document understanding.</p>
+    </li>
+    <li>
+      <p class="ptitle">PaDeLLM-NER: Parallel Decoding in Large Language Models for Named Entity Recognition</p>
+      <p class="pauthors">J. Lu, Z. Yang, Y. Wang, <b>X. Liu</b>, B. Mac Namee, C. Huang</p>
+      <p class="pvenue">NeurIPS 2024</p>
+      <p class="pdesc">Casts entity recognition as parallel decoding instead of token-by-token generation.</p>
+    </li>
+    <li>
+      <p class="ptitle"><a href="https://arxiv.org/abs/2311.07306" target="_blank" rel="noopener">What Large Language Models Bring to Text-rich VQA?</a></p>
+      <p class="pauthors"><b>X. Liu</b>, W. Tang, X. Ni, J. Lu, R. Zhao, Z. Li, F. Tan</p>
+      <p class="pvenue">arXiv 2311.07306 · 2023<span class="flag">first author</span></p>
+      <p class="pdesc">Separates OCR from the LLM to locate the bottleneck in text-rich VQA — mostly on the visual side.</p>
+    </li>
+  </ul>
+
+  <h3>Visual grounding &amp; cross-modal</h3>
+  <ul class="pubs">
+    <li>
+      <p class="ptitle"><a href="https://doi.org/10.1109/TPAMI.2023.3339628" target="_blank" rel="noopener">Context Disentangling and Prototype Inheriting for Robust Visual Grounding</a></p>
+      <p class="pauthors">W. Tang, L. Li, <b>X. Liu</b>, L. Jin, J. Tang, Z. Li</p>
+      <p class="pvenue">TPAMI · 2023</p>
+    </li>
+    <li>
+      <p class="ptitle"><a href="https://aclanthology.org/2023.findings-acl.504/" target="_blank" rel="noopener">Deeply Coupled Cross-Modal Prompt Learning</a></p>
+      <p class="pauthors"><b>X. Liu</b>, W. Tang, J. Lu, R. Zhao, Z. Guo, F. Tan</p>
+      <p class="pvenue">Findings of ACL 2023<span class="flag">first author</span></p>
+      <p class="pdesc">Exchanges information between vision and language prompts through multi-head cross-attention for few-shot transfer.</p>
+    </li>
+    <li>
+      <p class="ptitle">Entity-enhanced Adaptive Reconstruction Network for Weakly Supervised Referring Expression Grounding</p>
+      <p class="pauthors"><b>X. Liu</b>, L. Li, S. Wang, Z.-J. Zha, Z. Li, Q. Tian, Q. Huang</p>
+      <p class="pvenue">TPAMI · 2022<span class="flag">first author</span></p>
+    </li>
+    <li>
+      <p class="ptitle">Transferrable Referring Expression Grounding with Concept Transfer and Context Inheritance</p>
+      <p class="pauthors"><b>X. Liu</b>, L. Li, S. Wang, Z.-J. Zha, D. Meng, Q. Huang</p>
+      <p class="pvenue">ACM MM 2020<span class="flag">first author</span></p>
+    </li>
+    <li>
+      <p class="ptitle">Parsing-based View-aware Embedding Network for Vehicle Re-identification</p>
+      <p class="pauthors">D. Meng, L. Li, <b>X. Liu</b>, Y. Li, S. Yang, Z.-J. Zha, X. Gao, S. Wang, Q. Huang</p>
+      <p class="pvenue">CVPR 2020</p>
+    </li>
+    <li>
+      <p class="ptitle"><a href="https://doi.org/10.1109/ICCV.2019.00270" target="_blank" rel="noopener">Adaptive Reconstruction Network for Weakly Supervised Referring Expression Grounding</a></p>
+      <p class="pauthors"><b>X. Liu</b>, L. Li, S. Wang, Z.-J. Zha, D. Meng, Q. Huang</p>
+      <p class="pvenue">ICCV 2019<span class="flag">first author</span></p>
+      <p class="pdesc">Replaces box-level supervision with reconstruction for weakly supervised referring expression grounding.</p>
+    </li>
+    <li>
+      <p class="ptitle"><a href="https://doi.org/10.1145/3343031.3351074" target="_blank" rel="noopener">Knowledge-guided Pairwise Reconstruction Network for Weakly Supervised Referring Expression Grounding</a></p>
+      <p class="pauthors"><b>X. Liu</b>, L. Li, S. Wang, Z.-J. Zha, L. Su, Q. Huang</p>
+      <p class="pvenue">ACM MM 2019<span class="flag">first author</span></p>
+    </li>
+  </ul>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <ul class="rows no-date">
+    <li>
+      <span class="what">
+        <strong>Alibaba Group · Tongyi Lab, Qwen Team</strong>, Researcher<br>
+        Multimodal pretraining: data systems and data quality, multimodal position encoding and long context, unified evaluation.
+      </span>
+    </li>
+    <li>
+      <span class="what">
+        <strong>SenseTime Research</strong>, Researcher<br>
+        Cross-modal prompt learning, text-rich VQA, and data synthesis for document understanding.
+      </span>
+    </li>
+    <li>
+      <span class="what">
+        <strong>Institute of Computing Technology, CAS · VIPL</strong><br>
+        Weakly supervised visual grounding, cross-modal retrieval, vehicle re-identification.
+      </span>
+    </li>
+  </ul>
+</section>
+
+<footer>
+  <p>© 2026 Xuejing Liu</p>
+</footer>
+
+</body>
+</html>

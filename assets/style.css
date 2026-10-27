@@ -1,0 +1,187 @@
+/* ------------------------------------------------------------------
+   Xuejing Liu — personal homepage (English)
+   Plain, text-first layout in the style of common academic homepages:
+   one column, no cards, no icons, no navigation bar.
+   ------------------------------------------------------------------ */
+
+:root {
+  --bg: #ffffff;
+  --ink: #1c1c1c;
+  --ink-soft: #3d3d3d;
+  --muted: #6b6b6b;
+  --faint: #999999;
+  --link: #1a5fb4;
+  --rule: #e4e4e4;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #15171a;
+    --ink: #e7e7e7;
+    --ink-soft: #c8c8c8;
+    --muted: #9b9b9b;
+    --faint: #777777;
+    --link: #79aef8;
+    --rule: #2c2f33;
+  }
+}
+
+html { color-scheme: light dark; }
+
+body {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 64px 24px 80px;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+               "Hiragino Sans GB", "Microsoft YaHei", Helvetica, Arial, sans-serif;
+  font-size: 15.5px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+p { margin: 0 0 8px; }
+p:last-child { margin-bottom: 0; }
+ul { margin: 0; padding: 0; list-style: none; }
+strong { font-weight: 600; }
+
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ---------------- header ---------------- */
+
+h1 {
+  font-size: 33px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  margin: 0 0 6px;
+}
+
+.sub {
+  font-size: 16px;
+  color: var(--ink-soft);
+  margin: 0 0 18px;
+}
+
+.bio {
+  font-size: 15.5px;
+  max-width: 68ch;
+  margin: 0 0 12px;
+}
+
+.links { font-size: 15px; }
+.links span { color: var(--faint); margin: 0 8px; }
+
+/* ---------------- sections ---------------- */
+
+section { margin-top: 42px; }
+
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 14px;
+}
+
+h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink-soft);
+  margin: 26px 0 8px;
+}
+
+.note-line {
+  font-size: 14.5px;
+  color: var(--muted);
+  margin: -6px 0 0;
+}
+
+/* ---------------- news / experience rows ---------------- */
+
+.rows li {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  gap: 16px;
+  padding: 3px 0;
+}
+
+.when {
+  color: var(--muted);
+  font-size: 14.5px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.what { min-width: 0; }
+
+/* experience: no dates, single column */
+.rows.no-date li { display: block; padding: 0; margin-bottom: 15px; }
+.rows.no-date li:last-child { margin-bottom: 0; }
+
+/* ---------------- publications ---------------- */
+
+.pubs li { margin-bottom: 15px; }
+.pubs li:last-child { margin-bottom: 0; }
+
+.ptitle {
+  font-size: 15.5px;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.5;
+}
+.ptitle a { color: var(--link); }
+
+.pauthors {
+  font-size: 14.5px;
+  color: var(--ink-soft);
+  margin: 1px 0 0;
+}
+.pauthors b { font-weight: 600; color: var(--ink); }
+
+.pvenue {
+  font-size: 14px;
+  font-style: italic;
+  color: var(--muted);
+  margin: 1px 0 0;
+}
+
+.flag {
+  font-style: normal;
+  font-size: 12.5px;
+  color: var(--faint);
+  margin-left: 8px;
+}
+
+.pdesc {
+  font-size: 14.5px;
+  color: var(--muted);
+  margin: 4px 0 0;
+  max-width: 66ch;
+}
+
+/* ---------------- footer ---------------- */
+
+footer {
+  margin-top: 56px;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule);
+  font-size: 13.5px;
+  color: var(--faint);
+}
+
+/* ---------------- small screens ---------------- */
+
+@media (max-width: 620px) {
+  body { padding: 52px 18px 64px; font-size: 15px; }
+  h1 { font-size: 27px; }
+  .sub { font-size: 15px; }
+  .rows li { grid-template-columns: 74px minmax(0, 1fr); gap: 12px; }
+  .ptitle { font-size: 15px; }
+  section { margin-top: 34px; }
+}
+
+@media print {
+  body { padding: 0; max-width: none; }
+  a { color: #000; }
+}
